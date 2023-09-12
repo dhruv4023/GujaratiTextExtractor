@@ -1,11 +1,12 @@
 import datetime
 import os
+import time
 
 
 def write_to_txt_file(data):
     # Name of the output folder
     output_folder = 'outputs'
-
+    time.sleep(1)
     # Create the output folder if it doesn't exist
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -21,5 +22,3 @@ def write_to_txt_file(data):
         file.write(data)
     # The file will be automatically closed when the 'with' block exits
     return  "data written at: "+'/output/'+currrent_date_time+'.txt'
-
-write_to_txt_file("hello")
