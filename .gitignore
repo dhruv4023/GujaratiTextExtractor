@@ -6,3 +6,4 @@ TestImgs/tmp_image.jpg
 temp
 .ipynb_checkpoints
 TestImgs
+*.ipynb
