@@ -3,5 +3,4 @@ RequiredFiles
 __pycache__
 outputs
 temp
-.ipynb_checkpoints
-*.ipynb
+*ipynb*
