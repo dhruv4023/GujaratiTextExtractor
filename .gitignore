@@ -1,8 +1,8 @@
-/venv
-/RequiredFiles
-/__pycache__
-/outputs
-/TestImgs/tmp_image.jpg
-/temp
-/.ipynb_checkpoints
-/TestImgs
+venv
+RequiredFiles
+__pycache__
+outputs
+TestImgs/tmp_image.jpg
+temp
+.ipynb_checkpoints
+TestImgs
