@@ -24,4 +24,4 @@ img_path="TestImgs\\tst_dev.jpeg"
 img_path=gray_Image(img_path) 
 # img_path=cleanTxtVisible(img_path) 
 # img_path=thin_font(img_path) 
-print(write_to_txt_file(extract_text(img_file=img_path)))
+print(write_to_txt_file(extract_text(img_file=img_path,lang="eng"))) # eng -> english  # guj -> gujarati

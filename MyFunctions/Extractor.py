@@ -4,12 +4,12 @@ import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\\Apps\\Tesseract-OCR\\tesseract.exe'
 
 
-def extract_text(img_file:str):
+def extract_text(img_file:str,lang="guj"):
     # Open the image
     image = Image.open(img_file)
 
     # Use pytesseract to extract text
-    extracted_text = pytesseract.image_to_string(image, lang='eng', output_type=pytesseract.Output.STRING)
+    extracted_text = pytesseract.image_to_string(image, lang=lang, output_type=pytesseract.Output.STRING)
 
     # Print or use the extracted Gujarati text
     return (extracted_text)
