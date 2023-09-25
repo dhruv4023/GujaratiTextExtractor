@@ -8,7 +8,7 @@ def rm_noice(img_path):
     bg=cv2.morphologyEx(image, cv2.MORPH_DILATE, se)
     out_gray=cv2.divide(image, bg, scale=255)
     out_binary=cv2.threshold(out_gray, 0, 255, cv2.THRESH_OTSU )[1] 
-    out_path="temp//binary.jpg"
+    out_path="temp//rm_noise.jpg"
     cv2.imwrite(out_path,out_binary)
     return out_path
     # cv2.imshow('binary', out_binary)  

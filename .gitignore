@@ -4,3 +4,4 @@ __pycache__
 outputs
 temp
 *ipynb*
+.pytest_cache

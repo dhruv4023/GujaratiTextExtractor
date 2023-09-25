@@ -9,7 +9,7 @@ def extract_text(img_file:str):
     image = Image.open(img_file)
 
     # Use pytesseract to extract text
-    extracted_text = pytesseract.image_to_string(image, lang='guj', output_type=pytesseract.Output.STRING)
+    extracted_text = pytesseract.image_to_string(image, lang='eng', output_type=pytesseract.Output.STRING)
 
     # Print or use the extracted Gujarati text
     return (extracted_text)

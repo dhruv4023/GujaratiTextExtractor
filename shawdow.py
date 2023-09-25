@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('TestImgs//test4.webp', -1)
+img = cv2.imread('TestImgs//shadowImg_1.jpg', -1)
 
 rgb_planes = cv2.split(img)
 
