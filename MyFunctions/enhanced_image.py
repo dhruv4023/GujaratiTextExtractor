@@ -1,4 +1,4 @@
-def cleanTxtVisible(img_path):
+def enhanced_image(img_path):
     import cv2
     # Load the image with text
     image = cv2.imread(img_path)

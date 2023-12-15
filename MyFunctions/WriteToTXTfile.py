@@ -3,7 +3,7 @@ import os
 import time
 
 
-def write_to_txt_file(data):
+def write_to_txt_file(data,new_file_path):
     # Name of the output folder
     output_folder = 'outputs'
     time.sleep(1)
@@ -15,10 +15,10 @@ def write_to_txt_file(data):
     file_name=currrent_date_time+".txt"
     
     # Specify the file path inside the output folder
-    output_file_path = os.path.join(output_folder, file_name)
+    output_file_path = new_file_path if new_file_path is not None else os.path.join(output_folder, file_name)
     # Open a .txt file in write mode
     with open(output_file_path, 'w') as file:
         # Write data to the file
         file.write(data)
     # The file will be automatically closed when the 'with' block exits
-    return  "data written at: "+'/output/'+currrent_date_time+'.txt'
+    return  "data written at: "+output_file_path
